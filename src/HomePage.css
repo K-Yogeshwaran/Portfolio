@@ -1,0 +1,138 @@
+
+
+.homePage {
+    background:
+        radial-gradient(600px 400px at 0% 0%,
+           /*  position: top-left */
+            rgba(32, 56, 100, 0.25),
+           /*  faint blue glow */
+            rgba(13, 17, 23, 1) 80%
+            /* fade into base */
+        ),
+        var(--bg-primary);
+
+
+}
+
+.buttons {
+    align-items: center; /* IMPORTANT */
+}
+
+.buttons .btn {
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.buttons i {
+    position: relative;
+    top: 1px;
+}
+
+
+.home-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.downArrow {
+    margin-top: 40px;   
+    font-size: 25px;
+    color: var(--text-light);
+
+    animation: floatArrow 1.8s ease-in-out infinite;
+}
+
+@keyframes floatArrow {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+        /* move down */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* back up */
+    }
+}
+
+.hero-intro {
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.hero-name {
+    color: var(--text-white);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    text-align: center;
+}
+
+.hero-role {
+    color: var(--text-light);
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+    text-align: center;
+}
+
+.hero-description {
+    color: var(--text-mid);
+    font-size: 1.1rem;
+    max-width: 850px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.buttons a {
+    min-width: 180px;
+}
+
+/* Mobile tweaks */
+@media (max-width: 576px) {
+    .home-container {
+        padding: 1.5rem !important;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .buttons a {
+        width: 100%;
+    }
+
+    .icons a {
+        margin: 0 8px;
+    }
+}
+
+.fade-in {
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 576px) {
+    .buttons {
+        align-items: stretch;
+    }
+
+    .buttons .btn {
+        width: 100%;
+    }
+}

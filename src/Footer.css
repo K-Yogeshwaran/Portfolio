@@ -1,0 +1,163 @@
+
+.logo {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.logo-name {
+    color: var(--text-white);
+}
+
+.logo-bracket {
+    color: var(--primary);
+    /* Blue bracket like many dev portfolios */
+}
+
+/* .footer{
+    display: flex;
+}
+.footer {
+    padding: 3rem 1.5rem;
+} */
+.footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+
+
+.firstSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px;
+}
+
+.secondSection{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+
+    cursor: pointer;
+}
+
+.secondSection span:hover{
+    color: var(--text-white);
+}
+
+.thirdSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.firstSection,
+.secondSection,
+.thirdSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.secondFooter {
+    border-top: 1px solid var(--border-dark);
+    margin-top: 20px;
+    padding: 20px 1.5rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.heartSymbol{
+    color: red;
+    
+}
+
+.endingText{
+    color: var(--text-muted);
+    margin: 40px;
+}
+
+@media (max-width: 768px) {
+
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .firstSection,
+    .secondSection,
+    .thirdSection {
+        align-items: center;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+}
+
+.footerTitle {
+    color: var(--text-white);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.connectText {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* Social Icons Container */
+.socialIcons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Individual Icon */
+.socialIcons a {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    border: 1px solid var(--border-light);
+
+    color: var(--text-white);
+    font-size: 18px;
+
+    background-color: rgba(255,255,255,0.03);
+
+    transition: all 0.25s ease;
+}
+
+.socialIcons a:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

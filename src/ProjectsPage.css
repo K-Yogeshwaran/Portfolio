@@ -1,0 +1,215 @@
+
+.projectsPage{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 1100px;
+    margin: 0 auto;          /* centers content */
+    padding: 3rem 1.5rem;    /* LEFT + RIGHT spacing */
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.headerText{
+    color: var(--text-white);
+}
+
+.describingText {
+    color: var(--text-muted);
+}
+
+.projectCard {
+    padding: 20px;
+    background-color: var(--bg-secondary);
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+
+    width: 100%;
+    max-width: 420px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.projectCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+.topBarProject{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.endLogos{
+    display: flex;
+    gap: 20px;
+
+}
+
+
+
+
+.endLogos i{
+    font-size: 20px;
+    color: var(--text-white);
+}
+
+.folderLogo{
+    color: var(--primary);
+    font-size : 50px;
+}
+
+.projectTitle{
+    color: var(--text-white);
+    font-weight: bold;
+    font-size :larger;   
+}
+
+.projectDescription{
+    color : var(--text-muted);
+}
+
+.techStackDiv{
+    color: var(--text-white );  
+    border: 1px solid var(--border-mid);
+    border-radius: 10px;    
+    background-color: var(--bg-secondary ); 
+    padding: 7px;
+    width: auto;
+    font-family: "Jetbrains Mono";
+    white-space: nowrap;
+    font-size :13px;
+
+
+}
+
+
+.techStackGrid{
+    display: flex;
+    gap: 15px;
+
+    flex-wrap : wrap;
+}
+
+.techStackDiv:hover {
+    background-color: var(--bg-hover);
+    cursor: pointer;    
+}
+
+/* .projectsPage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.headerText {
+    color: var(--text-white);
+}
+
+.describingText {
+    color: var(--text-muted);
+    max-width: 600px;
+    line-height: 1.6;
+}
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+.projectCard {
+    padding: 20px;
+    border-radius: 12px;
+
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-light);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+.topBarProject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.folderLogo {
+    color: var(--primary);
+    font-size: 45px;
+}
+
+.endLogos {
+    display: flex;
+    gap: 18px;
+}
+
+.endLogos i {
+    font-size: 20px;
+    color: var(--text-white);
+}
+.projectTitle {
+    color: var(--text-white);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.projectDescription {
+    color: var(--text-muted);
+    margin-top: 5px;
+}
+.techStackGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.techStackDiv {
+    color: var(--text-white);
+    border: 1px solid var(--border-mid);
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-family: "JetBrains Mono";
+    font-size: 12px;
+    white-space: nowrap;
+
+    background-color: var(--bg-secondary);
+    transition: 0.2s ease;
+}
+
+.techStackDiv:hover {
+    background-color: var(--bg-hover);
+}
+@media (max-width: 768px) {
+
+    .projectsPage {
+        padding: 2rem 1rem;
+    }
+
+    .headerText {
+        text-align: center;
+    }
+
+    .describingText {
+        text-align: center;
+        margin: 0 auto;
+    }
+} */

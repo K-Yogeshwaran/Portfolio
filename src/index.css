@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+/* .code-font {
+        font-family: 'JetBrains Mono', monospace;
+    }
+ */
+
+:root {
+    /* ----- Background Colors ----- */
+    --bg-primary: #0D1117;
+    /* main background */
+    --bg-secondary: #161B22;
+    /* section background */
+    --bg-card: #1A1F25;
+    /* card background */
+    --bg-hover: #1E2633;
+    /* card hover / subtle highlight */
+
+    /* ----- Primary Accent Colors (Blue Theme) ----- */
+    --primary: #3B82F6;
+    /* primary blue */
+    --primary-light: #60A5FA;
+    /* lighter blue */
+    --primary-soft: #93C5FD;
+    /* soft blue for subtitles */
+
+    /* ----- Text Colors ----- */
+    --text-white: #FFFFFF;
+    --text-light: #D1D5DB;
+    /* light gray for paragraphs */
+    --text-muted: #9CA3AF;
+    /* dim gray */
+    --text-mid: #6B7280;
+    /* even softer gray */
+
+    /* ----- Borders / Lines ----- */
+    --border-dark: #1F2937;
+    --border-mid: #272D37;
+    --border-light: #2D333B;
+
+    /* ----- Tag / Badge Colors ----- */
+    --tag-bg: #1F2937;
+    --tag-border: #2A303C;
+
+    /* ----- Icons / Highlights ----- */
+    --icon-blue: #3B82F6;
+    --icon-blue-light: #60A5FA;
+    --icon-muted: #4B5563;
+
+    /* ----- Footer Colors ----- */
+    --footer-bg: #0D1117;
+    --footer-text: #9CA3AF;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
+}

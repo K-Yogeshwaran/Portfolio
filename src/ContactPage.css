@@ -1,0 +1,365 @@
+
+.contactPage {
+    min-height: 100vh;
+}
+
+.contactPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.entirePage {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+
+
+/* .leftSide{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 45px;
+} */
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftSide {
+    max-width: 500px;
+}
+
+
+.headerText {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--text-white);
+}
+
+.belowHeaderText {
+    color: var(--text-muted);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+/* .headerText{
+    font-size: 45px;
+    font-weight: bolder;
+    color: var(--text-white);
+}
+ */
+/* .belowHeaderText{
+    color: var(--text-muted);
+    font-size: 20px;
+} */
+
+
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.location{
+    display: flex;
+    gap: 10px;
+
+    color: var(--text-muted);
+    font-size: 18px;
+}
+.credentialsList{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.credential {
+    width: 100%;
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px;
+    border-radius: 12px;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-dark);
+
+    transition: 0.2s ease;
+}
+
+.credential:hover{
+    background-color: var(--bg-secondary);
+}
+
+.icon{
+    color: white;
+    /* background-color: #496da772; */
+    background-color: var(--icon-blue);
+    font-size: 25px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex : 1;
+}   
+
+.actualContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.keyName{
+    color: var(--text-muted);
+}
+
+.actualValue{
+    color: var(--text-white);
+}
+
+.copyBtn{
+    cursor: pointer;
+    color: var(--text-white);
+
+    padding: 10px;
+    border-radius: 10px;
+    border : 1px solid var(--border-dark);
+}
+
+.copyBtn:hover{
+    background-color: var(--bg-hover);
+}
+
+.visitBtn{
+    cursor: pointer;
+    color: var(--text-white);
+
+    padding: 10px;
+    border-radius: 10px;
+    border : 1px solid var(--border-dark);
+}
+
+.visitBtn:hover{
+    background-color: var(--bg-hover);
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+
+
+.formDiv {
+    width: 100%;
+    max-width: 420px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    padding: 35px;
+
+    background: linear-gradient(
+        180deg,
+        var(--bg-card),
+        var(--bg-secondary)
+    );
+
+    border: 1px solid var(--border-mid);
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+.formDiv input,
+.formDiv textarea {
+    width: 100%;
+    padding: 14px 16px;
+
+    background-color: var(--bg-secondary);
+    color: var(--text-white);
+
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+
+    font-size: 15px;
+    outline: none;
+
+    transition: 
+        border 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.formDiv input:focus,
+.formDiv textarea:focus {
+    border-color: var(--primary);
+    background-color: var(--bg-hover);
+
+    box-shadow: 
+        0 0 0 2px rgba(59, 130, 246, 0.25);
+}
+
+
+.formDiv input::placeholder,
+.formDiv textarea::placeholder {
+    color: var(--text-mid);
+}
+
+.formDiv button {
+    margin-top: 10px;
+
+    height: 48px;
+    border-radius: 12px;
+    border: none;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-light)
+    );
+
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.formDiv button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+}
+
+.formDiv button:active {
+    transform: translateY(0);
+    opacity: 0.9;
+}
+
+.contactForm h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-white);
+}
+
+@media (max-width: 768px) {
+
+    .contactPage {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .leftSide {
+        align-items: center;
+        text-align: center;
+    }
+
+    .location {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .credential {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 10px;
+    }
+
+    .content {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerText {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .entirePage {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
+
+/* Container must be relative so the tooltip aligns to it */
+.copy-container {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.tooltip-popup {
+    position: absolute;
+    bottom: 130%; /* Positions it above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    pointer-events: none; /* Prevents interference with clicks */
+    animation: fadeInOut 0.3s ease-in-out;
+}
+
+/* Optional: Add a small triangle at the bottom of the tooltip */
+.tooltip-popup::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+@keyframes fadeInOut {
+    from { opacity: 0; transform: translate(-50%, 10px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
+}
+

@@ -1,0 +1,79 @@
+
+.custom-nav{
+    background-color: var(--bg-primary);
+
+    padding: 20px 0;
+}
+
+.brand-text {
+    font-size: 1.3rem;
+    color: var(--text-white);
+}
+
+.nav-link{
+    color: var(--text-white);
+    margin: 0 12px;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+    
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+
+.logo {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.logo-name {
+    color: var(--text-white);
+}
+
+.logo-bracket {
+    color: var(--primary);
+    /* Blue bracket like many dev portfolios */
+}
+
+@media (max-width: 768px) {
+    .custom-nav {
+        padding: 12px 0;
+    }
+
+    .nav-link {
+        margin: 8px 0;
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav {
+        background-color: var(--bg-secondary);
+        padding: 12px;
+        border-radius: 10px;
+    }
+}
+
+.custom-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link.active {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
+.logo:hover .logo-name {
+    color: var(--primary);
+    transition: 0.3s;
+}
+
