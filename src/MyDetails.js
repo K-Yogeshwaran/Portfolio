@@ -197,9 +197,9 @@ export const certifications = [
 export const achievements = [
     {
         title: "2nd Prize – Agri Tech Hardware Hackathon 2026",
-        category: "AgriTech Hardware Innovation",
+        category: "Hackathon",
         description:
-            "Secured second place in the Agri Tech Hardware Hackathon 2026 organized by Founderpassion Foundation. Collaborated with a team to design and develop an innovative agriculture-focused hardware solution addressing real-world farming challenges through technology and smart systems.",
+            "Secured second place in the Agri Tech Hackathon 2026 organized by Founderpassion Foundation. Collaborated with a team to develop an innovative agriculture-focused solution to solve real-world farming challenges through technology.",
         period: "Feb 2026",
         image: AgriHackathon,
         icon: FaSeedling,
