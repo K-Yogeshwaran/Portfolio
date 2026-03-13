@@ -3,6 +3,7 @@ import Freshathon from "./assets/Freshathon Image.jpg";
 import KalamAwards from "./assets/Kalam Awards Image.jpg";
 import FiftyDayBadge from "./assets/Leetcode 50 day badge.png";
 import HundredDayBadge from "./assets/Leetcode 100 day badge.png";
+import AgriHackathon from "./assets/Agri Hackathon Image.jpeg";
 
 import {
     FaHtml5,
