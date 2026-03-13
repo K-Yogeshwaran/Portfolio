@@ -20,7 +20,8 @@ import {
 } from "react-icons/si";
 
 import {
-    FaNodeJs
+    FaNodeJs,
+    FaSeedling
 } from "react-icons/fa";
 
 import {
