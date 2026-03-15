@@ -36,7 +36,7 @@ function HomePage() {
                     </a>
 
                     <a
-                        href="https://drive.google.com/file/d/1HK_5PQgYRql9qKvrW1twcEAC-J2XjdUE/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/1Ma0jdeaQKAEjsEzEeVfeUPojG0q20CsI/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-outline-info"
