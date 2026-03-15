@@ -167,6 +167,16 @@ export const projects = [
     }
 ]
 
+export const internships = [
+    {
+        title: "MERN STACK – Better Tomorrow",
+        subtitle: "Internship Project (2025)",
+        description: "Developed ElectroMart, a full-stack e-commerce web application built using the MERN stack which supports JWT-based authentication, role-based access control, RESTful APIs, and CRUD operations for products, users, cart, and orders. The application features a responsive React UI, secure backend services, and scalable database design using MongoDB and Mongoose.",
+        techStack: ["React JS", "Node JS", "Express JS", "MongoDB"],
+        link: "https://github.com/K-Yogeshwaran/ElectroMart-E-Commerce-Website"
+    }
+]
+
 export const certifications = [
     {
         title: "C Programming Certificate",

@@ -25,6 +25,7 @@ function Navbar() {
                     <ul className='navbar-nav mx-auto'>
                         <li className='nav-item '><a href="#about" className='nav-link '>About</a></li>
                         <li className='nav-item'><a href="#project" className='nav-link '>Projects</a></li>
+                        <li className='nav-item'><a href="#internship" className='nav-link '>Internship</a></li>
                         <li className='nav-item'><a href="#certifications" className='nav-link '>Certifications</a></li>
                         <li className='nav-item'><a href="#achievements" className='nav-link '>Achievements</a></li>
                         <li className='nav-item'><a href="#contact" className='nav-link '>Contact</a></li>

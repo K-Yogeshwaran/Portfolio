@@ -3,6 +3,7 @@ import "./HomePage.css";
 import AboutPage from './AboutPage';
 import ProjectsPage from "./ProjectsPage";
 import CertificationPage from './CertificationPage';
+import InternshipPage from './InternshipPage';
 import AchievementsPage from './AchievementsPage';
 import ContactPage from './ContactPage';
 import Footer from "./Footer";
@@ -73,6 +74,7 @@ function HomePage() {
 
             <section id="about"><AboutPage /></section>
             <section id="project"><ProjectsPage /></section>
+            <section id="internship"><InternshipPage /></section>
             <section id="certifications"><CertificationPage /></section>
             <section id="achievements"><AchievementsPage /></section>
             <section id="contact"><ContactPage /></section>
